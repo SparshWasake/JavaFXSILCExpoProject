@@ -29,17 +29,23 @@ public class Scene5Controller {
         boolean ok = AccountManager.login(username, password, role);
 
         if (ok) {
-            goToScene7();
+            goToDashboard();
         } else {
             messageLabel.setText("Invalid credentials for " + role);
             messageLabel.setStyle("-fx-text-fill: red;");
         }
     }
 
-    private void goToScene7() {
+    private void goToDashboard() {
+        String fxml = switch (Session.getCurrentRole()) {
+            case "Student" -> "Scene7.fxml";
+            case "Teacher" -> "Scene8.fxml";
+            case "Family" -> "Scene9.fxml";
+            default -> null;
+        };
         try {
             Stage stage = (Stage) usernameField.getScene().getWindow();
-            Parent root = FXMLLoader.load(getClass().getResource("Scene7.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource(fxml));
             stage.setScene(new Scene(root));
             stage.show();
         } catch (Exception e) {

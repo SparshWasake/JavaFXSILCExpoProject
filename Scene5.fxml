@@ -8,10 +8,10 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SILCExpoProject.Scene5Controller" prefWidth="600" prefHeight="400">
+<AnchorPane stylesheets="@dark-theme.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SILCExpoProject.Scene5Controller" prefWidth="600" prefHeight="400">
 
     <children>
-        <Label text="Login" layoutX="270" layoutY="80"/>
+        <Label text="Login" styleClass="title" layoutX="250" layoutY="60"/>
 
         <TextField fx:id="usernameField" LayoutX="200" layoutY="140" promptText="Username"/>
 
@@ -19,6 +19,6 @@
 
         <Button text="Login" layoutX="260" layoutY="250" onAction="#attemptLogin"/>
 
-        <Label fx:id="messageLabel" layoutX="200" layoutY="300" textFill="red"/>
+        <Label fx:id="messageLabel" layoutX="200" layoutY="300" styleClass="message"/>
     </children>
 </AnchorPane>

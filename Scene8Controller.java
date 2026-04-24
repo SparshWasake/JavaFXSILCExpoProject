@@ -9,7 +9,7 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
-public class Scene7Controller {
+public class Scene8Controller {
     @FXML
     private TableView<ScheduleItem> scheduleTable;
 
@@ -29,8 +29,8 @@ public class Scene7Controller {
         roomCol.setCellValueFactory(new PropertyValueFactory<>("room"));
 
         scheduleTable.getItems().addAll(
-                new ScheduleItem("Period 1", "Marathi", "Room x"),
-                new ScheduleItem("Period 2", "CS5", "Room x"),
+                new ScheduleItem("Period 1", "Hindi", "Room x"),
+                new ScheduleItem("Period 2", "Social Studies", "Room x"),
                 new ScheduleItem("Period 3", "Cricket", "Room x"));
     }
 

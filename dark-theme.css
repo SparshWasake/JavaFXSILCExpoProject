@@ -1,0 +1,94 @@
+.root {
+    -fx-background-color: #1e1e2f;
+    -fx-font-family: "Segoe UI", "Arial", ;
+}
+
+.label {
+    -fx-text-fill: #e0e0e0;
+    -fx-font-weight: normal;
+}
+
+.label:focused {
+    -fx-text-fill: white;
+}
+
+.button {
+    -fx-background-color: #3a3f5c;
+    -fx-text-fill: white;
+    -fx-padding: 8 16 8 16;
+    -fx-background-radius: 8px;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #50577a;
+}
+
+.button:pressed {
+    -fx-background-color: #2c2f45;
+}
+
+.text-field, .password-field {
+    -fx-background-color: #2a2d3e;
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: #aaaaaa;
+    -fx-background-radius: 6;
+    -fx-border-radius: 6;
+    -fx-border-color: #44475a;
+}
+
+.choice-box {
+    -fx-background-color: #2a2d3e;
+    -fx-mark-color: white;
+    -fx-text-fill: black;
+}
+
+.choice-box .label {
+    -fx-text-fill: white;
+}
+
+.table-view {
+    -fx-background-color: #2a2d3e;
+    -fx-control-inner-background: #2a2d3e;
+    -fx-text-fill: white;
+}
+
+.table-view .column-header {
+    -fx-background-color: #3a3f5c;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: white;
+}
+
+.table-row-cell {
+    -fx-text-fill: white;
+}
+
+.table-row-cell:filled:selected {
+    -fx-background-color: #50577a;
+}
+
+.list-view {
+    -fx-background-color: #2a2d3e;
+    -fx-control-inner-background: #2a2d3e;
+    -fx-text-fill: white;
+}
+
+.list-cell {
+    -fx-text-fill: white;
+}
+
+.list-cell:filled:selected {
+    -fx-background-color: #50577a;
+}
+
+#messageLabel {
+    -fx-text-fill: #ff6b6b;
+}
+
+.title {
+    -fx-font-size: 28px;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}

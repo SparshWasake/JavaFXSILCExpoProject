@@ -9,11 +9,11 @@
 <AnchorPane stylesheets="@dark-theme.css"
             xmlns="http://javafx.com/javafx/25"
             xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="SILCExpoProject.Scene7Controller"
+            fx:controller="SILCExpoProject.Scene8Controller"
             prefWidth="600" prefHeight="400">
 
     <children>
-        <Label text="Student Schedule"
+        <Label text="Your Student's Schedule"
                layoutX="180" layoutY="20"
                style="-fx-font-size: 28px;"/>
 
